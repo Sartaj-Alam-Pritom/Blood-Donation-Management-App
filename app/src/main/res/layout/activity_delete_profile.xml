@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/swipeContainer">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DeleteProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:id="@+id/RL_email">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="357dp"
+                android:layout_height="231dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/deleteacc" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:id="@+id/textView_delete_user_pwd"
+                android:layout_marginTop="20dp"
+                android:text="Current Password*"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/editText_delete_user_pwd"
+                android:layout_below="@+id/textView_delete_user_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:layout_marginTop="10dp"
+                android:hint=" Type your registered password"
+                android:textSize="20sp"
+                android:inputType="textPassword" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/editText_delete_user_pwd"
+                android:id="@+id/button_delete_user_authenticate"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:text="Authenticate"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <ProgressBar
+                android:id="@+id/progressbarID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_delete_user_authenticated"
+                android:text="Your profile is not authenticated or varified yet!"
+                android:textSize="18sp"
+                android:textColor="#555555"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/button_delete_user"
+                android:layout_below="@+id/textView_delete_user_authenticated"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:text="Delete User"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

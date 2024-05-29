@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/swipeContainer">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".ui.UserProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="169dp">
+
+            <ImageView
+                android:id="@+id/propic"
+                android:layout_width="170dp"
+                android:layout_height="190dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/blank23" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/ic_profile"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/baseline_account_circle_24" />
+
+            <TextView
+                android:id="@+id/textview_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ic_profile"
+                android:layout_marginStart="50dp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/divider_name"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textview_name"
+                android:layout_marginTop="20dp"
+                android:background="@color/browser_actions_title_color" />
+
+            <ImageView
+                android:id="@+id/ic_blood"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/divider_name"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/blood" />
+
+            <TextView
+                android:id="@+id/textview_blood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider_name"
+                android:layout_alignStart="@+id/ic_blood"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20sp"
+                android:text="Blood_Group"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/divider_blood"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textview_blood"
+                android:layout_marginTop="20dp"
+                android:background="@color/browser_actions_title_color" />
+
+            <ImageView
+                android:id="@+id/ic_phone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/divider_blood"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/baseline_call_24" />
+
+            <TextView
+                android:id="@+id/textview_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider_blood"
+                android:layout_alignStart="@+id/ic_phone"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20sp"
+                android:text="Phone"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/divider_phone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textview_phone"
+                android:layout_marginTop="20dp"
+                android:background="@color/browser_actions_title_color" />
+
+            <ImageView
+                android:id="@+id/ic_address"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/divider_phone"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/baseline_add_location_24" />
+
+            <TextView
+                android:id="@+id/textview_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider_phone"
+                android:layout_alignStart="@+id/ic_address"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20sp"
+                android:text="Address"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/divider_address"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/textview_address"
+                android:layout_marginTop="20dp"
+                android:background="@color/browser_actions_title_color"/>
+
+            <Button
+                android:id="@+id/callBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/divider_address"
+                android:layout_marginTop="130dp"
+                android:textColor="@color/white"
+                android:text="Call now"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <ProgressBar
+                android:id="@+id/progressbarID"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:elevation="10dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
