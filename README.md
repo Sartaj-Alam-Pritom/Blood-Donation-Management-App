@@ -4,6 +4,14 @@ The **Blood Donation App** is a user-friendly platform designed to streamline th
 
 ---
 
+## User Manual
+
+The **User Manual** provides detailed step-by-step instructions to use the app, including screenshots and descriptions of all its features. It is designed to help both donors and recipients navigate the app effortlessly.  
+
+👉 **[Download User Manual](./Blood_Donation_App_User_Manual.pdf)**  
+
+---
+
 ## Features
 
 1. **Dual Registration**: Users can register as either donors or recipients.
@@ -31,7 +39,7 @@ The **Blood Donation App** is a user-friendly platform designed to streamline th
 5. **Communication**:
    - View donor information and contact them directly via the app’s call functionality.
 
-For detailed step-by-step instructions, refer to the **User Manual PDF** included in this repository.
+For detailed instructions, refer to the **User Manual** linked above.
 
 ---
 
@@ -48,8 +56,10 @@ The app aims to continually evolve. Potential future features include:
 
 ## License
 
-This project is licensed under the **MIT License**.  
-You are free to use, modify, and distribute the app, provided proper credit is given to the original developer.
+This project is owned solely by **Md. Sartaj Alam Pritom**.  
+You are not permitted to copy, modify, or distribute this project without the explicit permission of the owner.  
+
+All rights reserved © **Md. Sartaj Alam Pritom**
 
 ---
 
@@ -60,7 +70,6 @@ You are free to use, modify, and distribute the app, provided proper credit is g
 🎓 **Department of Computer Science and Engineering (CSE), Series: 20**  
 📧 **Email**: [sartajalam0010@gmail.com](mailto:sartajalam0010@gmail.com)  
 📞 **Contact**: +880 1795 991748  
-🌟 **Top 5 in academics (CGPA: Outstanding)**  
 
 ### Areas of Interest
 - Machine Learning (ML)  
@@ -73,6 +82,8 @@ I have successfully completed several projects, including **Django websites** an
 ---
 
 ## Attachments
-- [User Manual PDF](./Blood_Donation_App_User_Manual.pdf)
 
-Feel free to explore the repository and contribute to the mission of saving lives through technology!
+- 👉 **[My GitHub Profile](https://github.com/Sartaj-Alam-Pritom)**  
+- 👉 **[All Repositories](https://github.com/Sartaj-Alam-Pritom?tab=repositories)**  
+
+Feel free to explore and contribute to the mission of saving lives through technology!
